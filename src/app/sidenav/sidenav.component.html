@@ -1,0 +1,52 @@
+<mat-drawer-container class="container" autosize>
+  <mat-drawer
+    #drawer
+    class="sidenav"
+    mode="side"
+    opened
+    fxHide
+    fxShow.gt-sm="true"
+    [fxShow]="expand"
+  >
+    <div fxLayout="column" fxLayoutAlign="space-between center">
+      
+      <div class="menu-top">
+        <mat-card class="card">
+          <img
+            src="https://via.placeholder.com/100x100?text=Photo"
+            alt="Eduard Iacob Photo"
+            class="propic"
+          />
+          <h1>Eduard Iacob</h1>
+          <p class="title">web developer</p>
+          <mat-card-footer>
+            <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+          </mat-card-footer>
+        </mat-card>
+      </div>
+
+      <div class="menu-nav">
+        <mat-list>
+          <mat-list-item>About</mat-list-item>
+          <mat-list-item>My Skills</mat-list-item>
+          <mat-list-item>Work</mat-list-item>
+          <mat-list-item>Contact</mat-list-item>
+        </mat-list>
+      </div>
+
+      <div class="menu-links"></div>
+    </div>
+  </mat-drawer>
+
+  <div class="sidenav-content">
+    <button
+      mat-icon-button
+      (click)="expand = !expand"
+      fxShow.lt-sm="true"
+      fxHide.gt-sm="true"
+    >
+      <mat-icon *ngIf="!expand">menu</mat-icon>
+      <mat-icon *ngIf="expand">close</mat-icon>
+    </button>
+  </div>
+</mat-drawer-container>

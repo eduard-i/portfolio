@@ -1,0 +1,27 @@
+.container {
+  height: 100vh;
+  width: auto;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.sidenav {
+  padding: 20px;
+}
+
+.card {
+  width: fit-content;
+  height: fit-content;
+}
+
+.header-image {
+  background-image: url("https://via.placeholder.com/50?text=Photo");
+  background-size: cover;
+}
+
+.propic {
+  margin-bottom: 10px;
+}
+
+.title {
+  margin-top: -22px;
+}
