@@ -8,32 +8,30 @@
     fxShow.gt-sm="true"
     [fxShow]="expand"
   >
-    <div fxLayout="column" fxLayoutAlign="space-between center">
-      
+    <div fxLayout="column" fxLayoutAlign="space-evenly center">
       <div class="menu-top">
         <mat-card class="card">
-          <img
-            src="https://via.placeholder.com/100x100?text=Photo"
-            alt="Eduard Iacob Photo"
-            class="propic"
-          />
-          <h1>Eduard Iacob</h1>
-          <p class="title">web developer</p>
-          <mat-card-footer>
-            <mat-progress-bar mode="indeterminate"></mat-progress-bar>
-          </mat-card-footer>
+          <div fxLayout="column" fxLayoutAlign="space-evenly center">
+            <img
+              src="https://via.placeholder.com/100x100?text=Photo"
+              alt="Eduard Iacob Photo"
+              class="propic"
+            />
+            <h1>Eduard Iacob</h1>
+            <p class="title">web developer</p>
+          </div>
         </mat-card>
       </div>
-
+      <mat-progress-bar mode="determinate" value="100"></mat-progress-bar>
       <div class="menu-nav">
-        <mat-list>
-          <mat-list-item>About</mat-list-item>
-          <mat-list-item>My Skills</mat-list-item>
-          <mat-list-item>Work</mat-list-item>
-          <mat-list-item>Contact</mat-list-item>
-        </mat-list>
+        <mat-selection-list [multiple]="false">
+          <mat-list-option class="test">About</mat-list-option>
+          <mat-list-option class="test">My Skills</mat-list-option>
+          <mat-list-option>Work</mat-list-option>
+          <mat-list-option>Contact</mat-list-option>
+        </mat-selection-list>
       </div>
-
+      <mat-progress-bar mode="determinate" value="100"></mat-progress-bar>
       <div class="menu-links"></div>
     </div>
   </mat-drawer>

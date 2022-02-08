@@ -5,6 +5,8 @@
 }
 
 .sidenav {
+  height: 100vh;
+  width: auto;
   padding: 20px;
 }
 
@@ -24,4 +26,13 @@
 
 .title {
   margin-top: -22px;
+}
+
+.wrapper {
+  height: 25px;
+}
+
+.test {
+  display: flex;
+  text-align: center;
 }
